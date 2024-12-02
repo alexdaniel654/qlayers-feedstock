@@ -1,5 +1,5 @@
 {% set name = "qlayers" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/alexdaniel654/qlayers/archive/v{{ version }}.tar.gz
-  sha256: 9022d2bb723dcbfd47d6b0dab44cac6348856e969e816c495f8d8f206efb89fa
+  sha256: 3d79c2628eee4c855b8d8f2dbe4898127a5dd9d35eac49f468c06a040d08155e
 
 build:
   noarch: python
