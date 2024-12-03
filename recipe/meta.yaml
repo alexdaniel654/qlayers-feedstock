@@ -1,5 +1,6 @@
 {% set name = "qlayers" %}
 {% set version = "0.0.3" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python 3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9,<4.0
+    - python >={{ python_min }}
     - nibabel
     - numpy
     - pandas
@@ -34,6 +35,7 @@ test:
   source_files:
     - qlayers
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
   imports:
